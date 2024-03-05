@@ -7,8 +7,8 @@ const cwd = process.cwd();
 const PORT = process.env.PORT || 3001;
 const app = express();
 
-const activity = cwd.includes('socialDB')
-    ? cwd.split('socialDB')[1]
+const activity = cwd.includes('MongooseThoughtsApi')
+    ? cwd.split('MongooseThoughtsApi')[1]
     : cwd;
 
 app.use(express.urlencoded({ extended: true }));
