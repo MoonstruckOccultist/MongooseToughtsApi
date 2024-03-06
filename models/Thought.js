@@ -1,4 +1,4 @@
-const { Schema, model } = require('mongoose');
+const { Schema, model, Types } = require('mongoose');
 const dayjs = require('dayjs');
 
 function formatFunc(date) {
@@ -67,6 +67,6 @@ thoughtSchema
         return this.reactions.length
     });
 
-const Thoughts = model('thoughts', thoughtSchema);
+const Thought = model('thought', thoughtSchema);
 
-module.exports = Thoughts;
+module.exports = Thought;
